@@ -16,19 +16,19 @@ public class LibraryTest {
     }
 
     @Test
-    public void bookCount(){
+    public void libraryStartsEmpty(){
         assertEquals(0, library.bookCount());
 
     }
     @Test
-    public void addBook(){
+    public void addBookToLibrary(){
         library.addBook(book);
         assertEquals(1, library.bookCount());
 
     }
 //    if book count is less than capacity then add book
     @Test
-    public void checkCapacity(){
+    public void addBookToLibraryIfCapacity(){
         library.addBookIfCapacity(book);
         assertEquals(1, library.bookCount());
 
